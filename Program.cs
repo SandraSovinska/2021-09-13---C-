@@ -1,25 +1,30 @@
 ﻿using System;
+using System.Globalization;
 
-namespace NamuDarbai
+namespace SpindulioIlgisPlotas
 {
     class Program
     {
         static void Main(string[] args)
         {
-           
-            Console.WriteLine("koks jusu vardas");
+            Console.WriteLine("Ivesk apskritimo spinduli");
+            string radiusInstring = Console.ReadLine();
 
-            var vardas = Console.ReadLine();
+            double spindulys = Convert.ToDouble(radiusInstring,CultureInfo,Console.ReadLine());
 
-            Console.WriteLine("kokia jusu pavarde?");
+            double c = 2 * Math.PI * spindulys;//ilgis
 
-            var pavarde = Console.ReadLine();
+            double s = Math.PI * spindulys * spindulys;
 
-            Console.WriteLine("kokia Jusu gimtine?");
+            Console.WriteLine($"Apskritimo ilgis yra:{c}");
 
-            var gimimoVieta = Console.ReadLine();
 
-            Console.Write( vardas +  pavarde +  gimimoVieta ) ;
+
+
+
+
+
+
         }
     }
 }
